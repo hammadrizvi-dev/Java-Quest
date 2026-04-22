@@ -34,3 +34,30 @@
 - **Implicit Casting (Widening):** Converting a smaller type to a larger type size automatically. (`byte` -> `short` -> `char` -> `int` -> `long` -> `float` -> `double`)
 - **Explicit Casting (Narrowing):** Converting a larger type to a smaller size manually. Example: `int myInt = (int) myDouble;` (Data loss can happen here).
 
+## 6. Patterns (Nested Loops)
+- **Core Logic:** Outer loop hamesha rows/lines ke liye chalta hai, aur inner loop hamesha columns ya jo print karna hai uske liye chalta hai.
+- **Matrix Logic:** Har pattern ek grid `(i, j)` ki tarah hota hai. Har star ya number kisi condition jaise `i == j` ya `i + j == n` par print hota hai.
+- **Pro Tip:** Exam ya interview me pehle pattern ko rough copy par matrix bana kar index `(0, 1, 2)` likho. Formula aksar khud dikh jata hai.
+
+## 7. Functions & Methods
+- **DRY Principle:** "Don't Repeat Yourself". Same code baar-baar likhne ke bajay ek reusable block banate hain jise call kar sakein.
+- **Syntax:** `returnType functionName(parameters) { // body }`
+- **Memory Level:** Har function memory ke stack me ek naya stack frame banata hai. Jab function ka kaam khatam hota hai, toh memory clear ho jati hai.
+- **Method vs Function:** Agar function kisi class ya object ke andar likha hai, jaise Java me hota hai, toh use method kehte hain.
+
+## 8. Time & Space Complexity (DSA Basics)
+- **Time Complexity:** Code kitna time lega execute hone me based on input size `N`. Isko Big-O notation me naapte hain.
+- **`O(1)`:** Constant time, best case style example.
+- **`O(N)`:** Linear time, jaise ek normal loop.
+- **`O(N^2)`:** Quadratic time, jaise nested loops ya kuch sorting cases.
+- **Space Complexity:** Code execute hone ke liye kitni extra RAM ya memory lag rahi hai.
+- **Rule:** Hamesha worst case, yani sabse bekaar situation, ko measure karte hain.
+
+## 9. Arrays & 2D Arrays
+- **1D Array:** Ek hi type ke bohot saare variables ka collection. Memory me ye contiguous line me store hote hain.
+- **Syntax:** `int[] marks = new int[5];`
+- **Indexing:** Hamesha `0` se shuru hoti hai aur `n - 1` tak jaati hai.
+- **2D Array:** Matrix ya grid ki tarah hota hai. Ye array ke andar array hota hai.
+- **Syntax:** `int[][] matrix = new int[rows][cols];`
+- **Memory:** Java me 2D arrays directly matrix ki tarah store nahi hote, balki arrays of arrays ke form me store hote hain.
+
