@@ -1,4 +1,4 @@
-public public class LoopsAndPatterns{
+public class LoopsAndPatterns{
     
     public static void main(String[] args) {
         System.out.println("--- Loops & Patterns for Placement ---");
